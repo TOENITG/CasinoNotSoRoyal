@@ -3,6 +3,7 @@ package com.casino;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import com.casino.util.Timer;
 import com.casino.Main;
 
 
@@ -10,6 +11,8 @@ import com.casino.Main;
  * The main class of this server.
  * 
  * @author Gabriel
+ * 
+ * @author lare96
  */
 public final class Main {
 	  /** The logger for printing information. */
@@ -29,6 +32,9 @@ public final class Main {
      */
     public static void main(String[] args) {
         try {
+        	//The timer shows the amount of time it took to load all this.
+        	Timer timer = new Timer().reset();
+        	
         	//Example:	HostGateway.loadBannedHosts();
         	
         	logger.info("Sucessfully loaded all utilities!");
